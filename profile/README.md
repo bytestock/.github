@@ -1,6 +1,6 @@
 # Bytestock
 
-![Bytestock logo](./pics/bytestock-logo-red.png)
+![Bytestock logo](./profile/pics/bytestock-logo-red.png)
 
 Bytestock is a research project by [Slate](github.com/5late), [Ryan Alumkal](github.com/ryan-alumkal), and [Nolawi Teklehaimanot](github.com/nolawiyonas1).
 
