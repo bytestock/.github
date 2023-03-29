@@ -2,9 +2,15 @@
 
 ![Bytestock logo](./profile/pics/bytestock-logo-red.png)
 
+## Research Focused
+
 Bytestock is a research project by [Slate](github.com/5late), [Ryan Alumkal](github.com/ryan-alumkal), and [Nolawi Teklehaimanot](github.com/nolawiyonas1).
 
+## Open Source
+
 You can check out the code behind the [core program](github.com/bytestock/bytestock-core) or the [web interface](github.com/bytestock/bytestock-web).
+
+## Write-Up
 
 To read the documentaion, click below.
 
