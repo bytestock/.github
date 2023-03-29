@@ -2,6 +2,17 @@
 
 ![Bytestock logo](./pics/bytestock-logo-red.png)
 
+Bytestock is a research project by [Slate](github.com/5late), [Ryan Alumkal](github.com/ryan-alumkal), and [Nolawi Teklehaimanot](github.com/nolawiyonas1).
+
+You can check out the code behind the [core program](github.com/bytestock/bytestock-core) or the [web interface](github.com/bytestock/bytestock-web).
+
+To read the documentaion, click below.
+
+<details>
+
+<summary>CLICK HERE TO READ DOCUMENTATION</summary>
+<br>
+
 ## Table of Contents
 
 #### Website
@@ -103,3 +114,5 @@
 #### ``Home.py``
 
 #### ``README.md``
+
+</details>
