@@ -1,6 +1,6 @@
 # Bytestock
 
-![Bytestock logo](./profile/pics/bytestock-logo-red.png)
+![Bytestock logo](./pics/bytestock-logo-red.png)
 
 ## Research Focused
 
