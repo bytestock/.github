@@ -2,6 +2,10 @@
 
 ![Bytestock logo](https://github.com/bytestock/.github/blob/main/profile/pics/bytestock-logo-red.png)
 
+## Objective
+
+Run simulations to find out if there is a potential to predict where stock prices will be in the immediate future (5 to 30 days) based on recent price movements.
+
 ## Research Focused
 
 Bytestock is a research project by [Slate](https://github.com/5late), [Ryan Alumkal](https://github.com/ryanalumkal), and [Nolawi Teklehaimanot](https://github.com/nolawiyonas1).
@@ -12,16 +16,16 @@ You can check out the code behind the [core program](https://github.com/bytestoc
 
 ## Write-Up
 
-To read the documentaion, click below.
+To read the documentation, click below.
 
-<details>
+ <!--- <details>
 
 <summary>CLICK HERE TO READ DOCUMENTATION</summary>
-<br>
+<br> --->
 
 ## Table of Contents
 
-#### Website
+### Website
 
 - [Bytestock Website](#bytestock-website)
     - [Home](#home)
@@ -30,95 +34,224 @@ To read the documentaion, click below.
 
 #### Code
 
+- [Bytestock](#bytestock)
+  - [Objective](#objective)
+  - [Research Focused](#research-focused)
+  - [Open Source](#open-source)
+  - [Write-Up](#write-up)
+  - [Table of Contents](#table-of-contents)
+    - [Website](#website)
+      - [Code](#code)
+- [Bytestock Website](#bytestock-website)
+  - [Home](#home)
+  - [About](#about)
+  - [Live](#live)
 - [Bytestock Core](#bytestock-core)
-    - [``.gitignore``](#gitignore)
-    - [``README.md``](#readmemd)
-    - [``__init__.py``](#__init__py)
-    - [``calc.go``](#calcgo)
-    - [``calculations.py``](#calculationspy)
-    - [``close-data.txt``](#close-datatxt)
-    - [``data.py``](#datapy)
-    - [``go.mod``](#gomod)
-    - [``go.sum``](#gosum)
-    - [``main.py``](#mainpy)
-    - [``market-close-dates.txt``](#market-closed-datestxt)
-    - [``misc.py``](#miscpy)
-    - [``telemetry.txt``](#telemetrytxt)
-    - [``temp.py``](#temppy)
-
+  - [``.gitignore``](#gitignore)
+  - [``README.md``](#readmemd)
+  - [``calc.go``](#calcgo)
+    - [Functions:](#functions)
+  - [``calculations.py``](#calculationspy)
+  - [``data.py``](#datapy)
+    - [Functions:](#functions-1)
+  - [``go.mod``](#gomod)
+  - [``main.py``](#mainpy)
+  - [``market-closed-dates.txt``](#market-closed-datestxt)
+  - [``misc.py``](#miscpy)
+    - [Functions:](#functions-2)
 - [Bytestock Web](#bytestock-web)
-    - [``pages/``](#pages)
-        - [``About.py``](#aboutpy)
-        - [``Live.py``](#livepy)
-        - [``about.md``](#aboutmd)
-        - [``Live_Stocks.py``](#livepy)
-        - [``Live_Crypto.py``](#livepy)
-    - [``pics/``](#pics)
-    - [``streamlit``](#streamlit)
-        - [``config.toml``](#configtoml)
-    - [``Home.py``](#home)
+  - [pages](#pages)
+    - [``About.py``](#aboutpy)
+    - [``Live.py``](#livepy)
+    - [``about.md``](#aboutmd)
+    - [``stocks.txt``](#stockstxt)
+  - [pics](#pics)
+  - [streamlit](#streamlit)
+    - [``config.toml``](#configtoml)
+    - [``Home.py``](#homepy)
     - [``README.md``](#readmemd-1)
-    - [``market-closed-dates.txt``](#market-closed-datestxt)
-    - [``telemetry.txt``](#telemetrytxt)
 
-## Bytestock Website
+# Bytestock Website
 
-### Home
+## Home
 
-### About
+Allows users to input a stock ticker of choice (Ex: AAPL) that they want to run simulations on to predict where stock prices will be in the immediate future (5 to 30 days) based on recent price movements. 
 
-### Live
+<!--- Image of page -->
 
-## Bytestock Core
+## About
 
-#### ``.gitignore``
+Provides information about bytestock and legal information regarding data provided by the site. 
 
-#### ``README.md``
+<!--- Image of page -->
 
-#### ``__init__.py``
+## Live
 
-#### ``calc.go``
+Provides live hourly updates on 18 popular tech-focused company stocks. 
 
-#### ``calculations.py``
+![Live Stocks](profile\pics\live-stocks.png)
 
-#### ``close-data.txt``
+If the stock has been falling, a red arrow along with red text showing the % the stock has been down for the day will be shown. If the stock has been rising, a green arrow along with green text showing the % the stock has been up for the day will be shown.
 
-#### ``data.py``
+The data is cached hourly, meaning, the price information will be updated every hour and the user will not have to wait for the price to be fetched. 
 
-#### ``go.mod``
 
-#### ``go.sum``
+# Bytestock Core
 
-#### ``main.py``
+## ``.gitignore``
 
-#### ``market-closed-dates.txt``
+The gitignore file includes files that should not be pushed to the public github repository. These include but are not limited to files with sensitive information such as API keys and passwords, files that are unreadable such as binaries, and files that do not serve much purpose for others to see such as log files.
 
-#### ``misc.py``
+## ``README.md``
 
-#### ``telemetry.txt``
+Provides information about 'Bytestock Core' including its objective.
 
-#### ``temp.py``
+## ``calc.go``
 
-## Bytestock Web
+Calculations for stock simulations and predictions on stock price in the immediate future, written in Go.
 
-### pages
+### Functions:
 
-#### ``About.py``
+```go
+func readLines(path string) ([]string, error)
+```
 
-#### ``Live.py``
+```go
+func sum(arr []int) float64
+```
 
-#### ``about.md``
+```go
+func average(array []float64) float64 
+```
 
-#### ``stocks.txt``
+```go
+func normalDist(weekly_ratio_average float64, weekly_ratio_standard_deviation float64) float64 
+```
 
-### pics
+```go
+func weekly_ratio_calculation(index int, close_data []float64) float64
+```
 
-### streamlit
+```go
+func weekly_ratio_average_calculations(weekly_ratio_values []float64, comparison int) float64
+```
 
-#### ``config.toml``
+```go
+func weekly_ratio_standard_deviation_calculation(weekly_ratio_values []float64, comparison int) float64
+```
 
-#### ``Home.py``
+```go
+func simulation_and_probability_calculations(index int, close_data []float64, weekly_ratio_average float64, weekly_ratio_standard_deviation float64, period int) (int, int)
+```
 
-#### ``README.md``
+```go
+func main()
+```
+
+
+## ``calculations.py``
+
+## ``data.py``
+
+Uses ``yfinance`` library to get data from "Yahoo! Finance".
+
+### Functions:
+
+```python
+def getOCHLData(ticker, days: int) ->list:
+```
+Parameters: 
+- ticker: User requested stock ticker (Ex: AAPL)
+
+- days: Number of days to be considered when fetching data, 1095 days (3 years) by default
+
+Fetches data  including open days, daily open, daily close, daily adjusted close (used for the actual simulations), daily high, daily low values, and returns to ``main.py``.  
+
+```python
+def getRealTimeOCHL(ticker, days:int) ->list:
+```
+<!-- Is this the function for live stocks?-->
+Parameters: 
+- ticker: 
+
+## ``go.mod``
+
+## ``main.py``
+
+Main program of bytestock-core. 
+
+Calls ``calculations.py`` and ``data.py`` files. 
+
+Purpose of each function:
+```python
+def main()->None:
+```
+
+The main function of the program, asks user for preferred stock ticker. 
+
+Holds values of various data fetched from ``data.py`` file including open days, daily open, daily close, daily adjusted close (used for the actual simulations), daily high, and daily low values.  
+
+Calls calculation file ``calculations.py`` which runs simulations to find out if there is a potential to predict where stock prices will be in the immediate future (5 to 30 days) based on recent price movements.
+
+## ``market-closed-dates.txt``
+
+Lists all the dates the stock markets are closed to observe U.S. holidays
+
+## ``misc.py``
+<!--- Wait for function docstrings-->
+
+### Functions:
+
+
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+# Bytestock Web
+
+## pages
+
+### ``About.py``
+
+### ``Live.py``
+
+### ``about.md``
+
+### ``stocks.txt``
+
+## pics
+
+## streamlit
+
+### ``config.toml``
+
+### ``Home.py``
+
+### ``README.md``
 
 </details>
