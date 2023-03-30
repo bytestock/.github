@@ -18,10 +18,10 @@ You can check out the code behind the [core program](https://github.com/bytestoc
 
 To read the documentation, click below.
 
- <!--- <details>
+ <details>
 
 <summary>CLICK HERE TO READ DOCUMENTATION</summary>
-<br> --->
+<br>
 
 ## Table of Contents
 
