@@ -89,7 +89,7 @@ Provides information about bytestock and legal information regarding data provid
 
 Provides live hourly updates on 18 popular tech-focused company stocks. 
 
-![Live Stocks](profile\pics\live-stocks.png)
+![Live Stocks](https://github.com/bytestock/.github/blob/main/profile/pics/live-stocks.png)
 
 If the stock has been falling, a red arrow along with red text showing the % the stock has been down for the day will be shown. If the stock has been rising, a green arrow along with green text showing the % the stock has been up for the day will be shown.
 
@@ -153,7 +153,7 @@ func main()
 
 ## ``data.py``
 
-Uses ``yfinance`` library to get data from "Yahoo! Finance".
+Uses [``yfinance``](https://pypi.org/project/yfinance/) library to get data from "Yahoo! Finance".
 
 ### Functions:
 
