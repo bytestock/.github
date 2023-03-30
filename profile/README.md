@@ -1,6 +1,6 @@
 # Bytestock
 
-![Bytestock logo](./pics/bytestock-logo-red.png)
+![Bytestock logo](https://github.com/bytestock/.github/blob/main/profile/pics/bytestock-logo-red.png)
 
 ## Research Focused
 
