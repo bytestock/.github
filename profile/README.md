@@ -205,31 +205,45 @@ Lists all the dates the stock markets are closed to observe U.S. holidays
 
 
 ```python
+def getDateTimefromTicks(self):
 
+This function gets the date from the ticks.
 ```
 
 ```python
+def getFancyDateTimefromTicks(self):
 
+This function gets the formatted date from the ticks.
 ```
 
 ```python
+def getDayFromDate(self):
 
+This function gets the day from the date.
 ```
 
 ```python
+def getMarketCloseDates(self):
 
+This function gets the market closed dates.
 ```
 
 ```python
+def isMarketClosed(self):
 
+This function checks if the market is closed.
 ```
 
 ```python
+def wasMarketClosedFrom(self):
 
+This function checks if the market was closed from a certain date.
 ```
 
 ```python
+def telemetry(self):
 
+This function logs everytime the user queries a stock.
 ```
 
 # Bytestock Web
