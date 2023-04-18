@@ -148,9 +148,6 @@ func simulation_and_probability_calculations(index int, close_data []float64, we
 func main()
 ```
 
-
-## ``calculations.py``
-
 ## ``data.py``
 
 Uses [``yfinance``](https://pypi.org/project/yfinance/) library to get data from "Yahoo! Finance".
@@ -175,6 +172,8 @@ Parameters:
 - ticker: 
 
 ## ``go.mod``
+
+This is the modules file. It is similar to a requirements.txt file for python and holds the names of all the modules/library needed for the program to run.
 
 ## ``main.py``
 
