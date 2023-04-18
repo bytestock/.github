@@ -236,22 +236,38 @@ Lists all the dates the stock markets are closed to observe U.S. holidays
 
 ## pages
 
+This folder holds files for every single page including about, live_crypto, live_stock, etc.
+
 ### ``About.py``
 
-### ``Live.py``
+This file opens up the markdown file and writes each line to streamlit. Streamlit automatically creates the formatting for markdown.
+
+### ``Live_Crypto.py``
+
+This file is used to generate a live updating page of cryptocurrencies and their within-the-hour USD exchange rate.
+
+### ``Live_Stock.py``
+
+This file is used to generate a live updating page of select technology sector stocks and their within-the-hour USD price.
 
 ### ``about.md``
 
+This file contains the actual about.md, and contains this documentation within it.
+
 ### ``stocks.txt``
+
+This file contains a list of a stock tickers which are used by the [Live Stock](#Live_Stock.py) file.
 
 ## pics
 
-## streamlit
-
-### ``config.toml``
+This is a folder that contains pictures that are used in this documentation. They include the bytestock logo, and pictures of the website.
 
 ### ``Home.py``
 
+This is the main file that runs the home page and links the other pages.
+
 ### ``README.md``
+
+This is the README file used on github primarily.
 
 </details>
