@@ -77,19 +77,19 @@ To read the documentation, click below.
 
 Allows users to input a stock ticker of choice (Ex: AAPL) that they want to run simulations on to predict where stock prices will be in the immediate future (5 to 30 days) based on recent price movements. 
 
-<!--- Image of page -->
+![Home](https://raw.githubusercontent.com/bytestock/.github/main/profile/pics/Screenshot%202023-04-18%20113341.png)
 
 ## About
 
 Provides information about bytestock and legal information regarding data provided by the site. 
 
-<!--- Image of page -->
+![About](https://raw.githubusercontent.com/bytestock/.github/main/profile/pics/Screenshot%202023-04-18%20113009.png)
 
 ## Live
 
 Provides live hourly updates on 18 popular tech-focused company stocks. 
 
-![Live Stocks](https://github.com/bytestock/.github/blob/main/profile/pics/live-stocks.png)
+![Live Stocks](https://raw.githubusercontent.com/bytestock/.github/main/profile/pics/live-stocks.png)
 
 If the stock has been falling, a red arrow along with red text showing the % the stock has been down for the day will be shown. If the stock has been rising, a green arrow along with green text showing the % the stock has been up for the day will be shown.
 
